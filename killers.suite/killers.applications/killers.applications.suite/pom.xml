@@ -7,19 +7,38 @@
     <artifactId>killers.applications</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
+  
   <artifactId>killers.applications.suite</artifactId>
   <packaging>war</packaging>
   <name>killers.applications.suite Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
+   	<dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.dependency</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.configuration</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.core</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>kr.co.killers</groupId>
+      <artifactId>killers.support</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
+  
   <build>
     <finalName>killers.applications.suite</finalName>
   </build>
+  
 </project>
