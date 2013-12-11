@@ -6,4 +6,18 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>killers.tools</artifactId>
+  
+  <dependencies>
+		<dependency>
+			<groupId>kr.co.killers</groupId>
+		  <artifactId>killers.dependency</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		  <type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>kr.co.killers</groupId>
+		  <artifactId>killers.support</artifactId>
+		  <version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
