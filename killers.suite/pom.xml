@@ -12,5 +12,6 @@
   	<module>killers.support</module>
   	<module>killers.applications</module>
   	<module>killers.dependency</module>
+  	<module>killers.tools</module>
   </modules>
 </project>
