@@ -7,4 +7,8 @@
   </parent>
   <artifactId>killers.components</artifactId>
   <packaging>pom</packaging>
+  <modules>
+  	<module>killers.components.user</module>
+  	<module>killers.components.analysis</module>
+  </modules>
 </project>
