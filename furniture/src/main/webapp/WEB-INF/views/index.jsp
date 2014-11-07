@@ -8,10 +8,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>Bootswatch: Cyborg</title>
+<title>가구저작</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="http://bootswatch.com/cyborg/bootstrap.css" media="screen">
-<link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+
+<link rel="stylesheet" href="${resourcesPath}/modules/furniture/css/furniture.css">
+<link rel="stylesheet" href="${resourcesPath}/modules/bootstrap/css/bootstrap.css">
 </head>
 <body>
 	<div class="navbar navbar-default navbar-fixed-top">
@@ -25,6 +26,7 @@
 			</div>
 			<div class="navbar-collapse collapse" id="navbar-main">
 				<ul class="nav navbar-nav">
+					<li><a href="#">저작</a></li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/cyborg/#"	id="themes">Themes 
 							<span class="caret"></span>
@@ -72,6 +74,11 @@
 	</div>
 
 	<div class="container"></div>
+	
+	<div class="mainWrap">
+		<div class="editorControls"></div>
+	</div>
+	
 	
 	<script src="${resourcesPath}/modules/jquery/jquery-1.10.2.min.js"></script>
 	<script src="${resourcesPath}/modules/bootstrap/js/bootstrap.min.js"></script>

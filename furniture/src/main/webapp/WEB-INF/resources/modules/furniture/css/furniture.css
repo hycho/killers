@@ -1,0 +1,35 @@
+/*!
+	Furniture v0.0.1 (http://funiture.killers.co.kr)
+	Copyright 2014-2014 Killers, Inc.
+	Licensed under MIT 한글
+*/
+
+@font-face{
+	font-family:"Nanum Gothic";
+	src:url('/resources/modules/furniture/fonts/NanumGothic.eot');
+	src:url('/resources/modules/furniture/fonts/NanumGothic.eot?#iefix') format('embedded-opentype'),
+	url('/resources/modules/furniture/fonts/NanumGothic.woff') format('woff'),
+	url('/fonts/NanumGothic.ttf') format('truetype');
+	url('/fonts/NanumGothic.svg#NanumGothic') format('svg')
+	src:local(※), url('/resources/modules/furniture/fonts/NanumGothic.woff') format('woff');
+}
+
+.mainWrap {
+	position: absolute;
+	background-color: #000;
+	left: 50%;
+	top: 50%;
+	margin-left: -351px;
+	margin-top: -300px;
+	width: 800px;
+	height: 600px;
+}
+
+.editorControls{
+	position: absolute;
+	width: 100px;
+	height: 600px;
+	left: -102px;
+	top: 0;
+	background-color: #000;
+}
