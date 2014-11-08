@@ -75,13 +75,37 @@
 
 	<div class="container"></div>
 	
-	<div class="mainWrap">
+	<div id="mainWrap" class="mainWrap">
 		<div class="editorControls"></div>
+		<!-- 고정될 몸체 차후 자동 생성이 되도록 조절해야 한다. -->
+		<svg id="furEditorRoot" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" overflow="visible">
+			<svg id="furEditorBackground" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" overflow="none" style="pointer-events:none">
+				<rect width="100%" height="100%" x="0" y="0" stroke="#000" fill="#FFF" style="pointer-events:none"></rect>
+			</svg>
+			<!-- 주 Editor Event가 발생한 Canvas -->
+			<svg id="furCanvas" width="100%" height="100%" x="0" y="0" xmlns="http://www.w3.org/2000/svg">
+				<!--
+				<g style="pointer-events:all">
+					<title style="pointer-events:inherit">First Layer 1</title>
+					<rect fill="#FF0000" stroke="#000000" stroke-width="5" style="pointer-events:inherit" x="165" y="131" width="114" height="110" id="svg_1" fill-opacity="1" stroke-opacity="1">
+					</rect>
+				</g>
+				-->
+			</svg> 
+		</svg>
 	</div>
-	
 	
 	<script src="${resourcesPath}/modules/jquery/jquery-1.10.2.min.js"></script>
 	<script src="${resourcesPath}/modules/bootstrap/js/bootstrap.min.js"></script>
 	<script src="${resourcesPath}/modules/bootstrap/js/bootswatch.js"></script>
+	<script src="${resourcesPath}/modules/snap-svg/js/snap.svg.js"></script>
+	<script src="${resourcesPath}/modules/furniture/js/furniture.js"></script>
+	<script src="${resourcesPath}/modules/furniture/js/furniture-util.js"></script>
+	<script>
+		$(function() {
+			var s = Snap("#furCanvas");
+			var bigCircle = s.circle(150, 150, 100);
+		});
+	</script>
 </body>
 </html>
