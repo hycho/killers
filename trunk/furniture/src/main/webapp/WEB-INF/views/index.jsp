@@ -101,10 +101,13 @@
 	<script src="${resourcesPath}/modules/snap-svg/js/snap.svg.js"></script>
 	<script src="${resourcesPath}/modules/furniture/js/furniture.js"></script>
 	<script src="${resourcesPath}/modules/furniture/js/furniture-util.js"></script>
+	<script src="${resourcesPath}/modules/furniture/js/furniture-select.js"></script>
 	<script>
 		$(function() {
 			var s = Snap("#furCanvas");
 			var bigCircle = s.circle(150, 150, 100);
+			
+			fntEditor().generateSvgEditor($("#furCanvas"));
 		});
 	</script>
 </body>
